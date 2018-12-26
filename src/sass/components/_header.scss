@@ -94,7 +94,8 @@ header {
           background-color: $header-bg;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
+          padding: 0 10px;
           font-size: 14px;
           color: rgb(224,227,237);
           position: absolute;
