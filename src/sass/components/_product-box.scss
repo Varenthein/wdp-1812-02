@@ -46,7 +46,7 @@
     .stars {
       a {
         text-decoration: none;
-        color: rgb(42,42,42);
+        color: rgb(42, 42, 42);
         @extend .far;
         @extend .fa-star;
 
@@ -78,14 +78,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .outlines{
-      width:40%;
+    .outlines {
+      width: 40%;
     }
     .price {
-      width:60%;
+      width: 60%;
       display: flex;
       justify-content: flex-end;
-      .old-price{
+      .old-price {
         position: relative;
         font-size: 13px;
         line-height: 24px;
