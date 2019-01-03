@@ -8,11 +8,6 @@ a.not-underline {
 .post-box {
   margin-bottom: 2rem;
 
-  &:hover {
-    text-decoration: none;
-    color: #9b6520;
-  }
-
   .cover {
     padding: 70% 25px 0 25px;
     background: {
@@ -26,6 +21,7 @@ a.not-underline {
       display: flex;
       background-color: #ffffff;
       font-size: 14px;
+      color: black;
 
       & > * {
         flex: 1 1 auto;
@@ -67,19 +63,17 @@ a.not-underline {
 }
 
 .post-box {
-
   &:hover {
-    text-decoration: none;
-
+    .details {
+      color: black !important;
+    }
     h5 {
       color: #9b6520;
     }
-
     .details {
       color: $primary;
     }
     .btn-main-more {
-      color: #ffffff !important;
       background-color: $primary;
     }
 
