@@ -5,15 +5,11 @@
 
   .photo {
     position: relative;
-    padding: 80% 10px 0 10px;
-    background: {
-      color: #f4f5f7;
-      size: contain;
-      position: center;
-      repeat: no-repeat;
-    }
     overflow: hidden;
     align-items: flex-end;
+    .product-picture {
+      @include fullSize;
+    }
 
     .sale {
       position: absolute;
@@ -28,7 +24,11 @@
 
     .buttons {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      bottom: 0%;
     }
   }
 
