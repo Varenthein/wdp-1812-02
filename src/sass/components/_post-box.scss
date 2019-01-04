@@ -65,13 +65,10 @@ a.not-underline {
 .post-box {
   &:hover {
     .details {
-      color: black !important;
+      color: black;
     }
     h5 {
       color: #9b6520;
-    }
-    .details {
-      color: $primary;
     }
     .btn-main-more {
       background-color: $primary;
