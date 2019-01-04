@@ -8,7 +8,7 @@
     overflow: hidden;
     align-items: flex-end;
     .product-picture {
-      @include image-dimensions;
+      @include fullSize;
     }
 
     .sale {
