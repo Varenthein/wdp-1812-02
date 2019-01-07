@@ -34,3 +34,12 @@
     color: #ffffff;
   }
 }
+.active {
+  border: 1px solid $primary;
+  color: $primary;
+
+  &:hover {
+    border: 1px solid black;
+    color: white;
+  }
+}
