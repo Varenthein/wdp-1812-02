@@ -14,5 +14,5 @@ $animation-time-bg: 0.25s;
 $animation-time-font: 0.25s;
 
 %elementsAnimation {
-  transition: background-color $animation-time-bg, color $font-animation-time, border-color $animation-time-bg;
+  transition: background-color $animation-time-bg, color $animation-time-font, border-color $animation-time-bg;
 }
