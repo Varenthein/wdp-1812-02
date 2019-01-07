@@ -39,7 +39,7 @@
   color: $primary;
 
   &:hover {
-    border: 1px solid black;
-    color: white;
+    border: 1px solid $btn-active-black;
+    color: $btn-active-white;
   }
 }
