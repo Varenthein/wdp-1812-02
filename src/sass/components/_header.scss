@@ -177,17 +177,16 @@ header {
 
         &:hover {
           background: $primary;
-
-          &:hover ul li ul {
+        }
+          &:hover .subcategories {
             display: block;
             opacity: 1;
             visibility: visible;
           }
 
-          &:hover ul li, &:hover i {
+          &:hover .primary-category, &:hover i {
             color: $category-menu-bg-color;
           }
-        }
 
         i {
           color: $primary;
