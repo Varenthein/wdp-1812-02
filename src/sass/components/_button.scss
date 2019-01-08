@@ -28,6 +28,7 @@
       background-color: $primary;
       text-decoration: none;
       opacity: 1;
+      transition: 0.45s;
 
       &:not(.no-hover) {
         background-color: #2a2a2a;
