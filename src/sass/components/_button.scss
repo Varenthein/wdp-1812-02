@@ -34,12 +34,12 @@
     color: #ffffff;
   }
 }
-.active {
+.status-buttons-active {
   border: 1px solid $primary;
   color: $primary;
 
   &:hover {
-    border: 1px solid $btn-active-black;
-    color: $btn-active-white;
+    border: 1px solid $btn-active-text-black;
+    color: $btn-active-text-white;
   }
 }
