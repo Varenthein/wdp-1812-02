@@ -224,3 +224,47 @@ header {
     }
   }
 }
+@media (max-width: 767px) {
+  header {
+    .top-bar {
+      .text-left {
+        flex-grow: 2;
+
+        ul {
+          li {
+            margin-right: 1rem;
+          }
+        }
+      }
+
+      .text-right {
+        ul {
+          li {
+            margin-left: 0.9rem;
+          }
+        }
+      }
+      .header-links {
+        display: none;
+      }
+    }
+    .company-claim {
+      .phone-number {
+        order: 3;
+        flex-basis: 100%;
+        p {
+          font-size: 14px;
+        }
+      }
+      .logo {
+        order: 1;
+      }
+      .cart {
+        order: 2;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
