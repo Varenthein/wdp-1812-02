@@ -324,6 +324,7 @@ header {
       .text-left {
         flex-grow: 2;
 
+<<<<<<< HEAD
         .header-left-menu {
           margin-right: 0.9rem;
         }
@@ -358,6 +359,8 @@ header {
     }
   }
 }
+=======
+>>>>>>> Add RWD for search and Home menu
 @media (min-width: 767px) and (max-width: 1200px) {
 
   .menu-bar {
