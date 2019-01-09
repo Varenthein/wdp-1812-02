@@ -125,6 +125,36 @@ header {
       display: flex;
       align-self: stretch;
 
+      #input-hamburger {
+        opacity: 0;
+        position: absolute;
+        bottom: 10%;
+        left: 70%;
+      }
+
+      .nav-hamburger {
+        display: none;
+        height: 24px;
+        line-height: 50px;
+        width: 40px;
+        margin: 40px 10px;
+        text-align: center;
+        color: $text-color;
+        cursor: pointer;
+        position: absolute;
+        bottom: 10%;
+        left: 70%;
+
+        span {
+          background-color: $header-bg;
+          border-radius: 1px 1px 1px 1px;
+          height: 2px;
+          width: 20px;
+          display: block;
+          margin: 4px auto;
+        }
+      }
+
       ul {
         margin: 0;
         padding: 0;
@@ -222,5 +252,62 @@ header {
         }
       }
     }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1200px) {
+
+  .menu-bar {
+    height: 105px;
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .search-form-sm {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .nav-hamburger {
+    display: block !important;
+  }
+
+  .menu {
+    z-index: 100;
+    position: relative;
+    right: 8em;
+    ul {
+      flex-direction: column;
+      overflow: hidden;
+      max-height: 0;
+      width: 50rem;
+      z-index: 1000;
+      li {
+        background-color: $primary;
+        display: inline-block !important;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        a {
+          border-top: 4px solid $primary !important;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  .menu  #input-hamburger:checked + ul {
+    overflow: visible;
   }
 }
