@@ -267,7 +267,7 @@ header {
   .search-form-sm {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 5px 0;
   }
 
   .menu {
@@ -277,37 +277,43 @@ header {
 
 @media (max-width: 767px) {
 
-  .nav-hamburger {
-    display: block !important;
-  }
+  header {
+    .menu-bar {
+      .menu {
+        z-index: 100;
+        position: relative;
+        right: 8em;
 
-  .menu {
-    z-index: 100;
-    position: relative;
-    right: 8em;
-    ul {
-      flex-direction: column;
-      overflow: hidden;
-      max-height: 0;
-      width: 50rem;
-      z-index: 1000;
-      li {
-        background-color: $primary;
-        display: inline-block !important;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 100%;
-        min-width: 0;
-        a {
-          border-top: 4px solid $primary !important;
-          justify-content: center;
-          align-items: center;
+        .nav-hamburger {
+          display: block;
+        }
+
+        #input-hamburger:checked + ul {
+          overflow: visible;
+        }
+
+        ul {
+          flex-direction: column;
+          overflow: hidden;
+          max-height: 0;
+          width: 50rem;
+          z-index: 1000;
+          li {
+            background-color: $primary;
+            display: inline-block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 100%;
+            min-width: 0;
+            a {
+              border-top: 4px solid $primary;
+              justify-content: center;
+              align-items: center;
+            }
+          }
         }
       }
     }
   }
 
-  .menu  #input-hamburger:checked + ul {
-    overflow: visible;
-  }
 }
