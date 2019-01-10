@@ -319,6 +319,7 @@ header {
   }
 }
 
+
 @media (min-width: 767px) and (max-width: 1200px) {
 
   .menu-bar {
@@ -347,17 +348,11 @@ header {
         z-index: 100;
         position: relative;
         right: 8em;
-<<<<<<< HEAD
 
         .nav-hamburger {
           display: block;
         }
 
-=======
-        .nav-hamburger {
-          display: block;
-        }
->>>>>>> Add RWD to footer
         #input-hamburger:checked + ul {
           overflow: visible;
         }
