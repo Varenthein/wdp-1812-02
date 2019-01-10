@@ -149,11 +149,7 @@ header {
 
         span {
           background-color: $header-bg;
-<<<<<<< HEAD
           border-radius: 1px;
-=======
-          border-radius: 1px 1px 1px 1px;
->>>>>>> Add RWD for search and Home menu
           height: 2px;
           width: 20px;
           display: block;
@@ -323,10 +319,7 @@ header {
   }
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> Add RWD for search and Home menu
 @media (min-width: 767px) and (max-width: 1200px) {
 
   .menu-bar {
@@ -339,11 +332,7 @@ header {
   .search-form-sm {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
     padding: 5px 0;
-=======
-    padding: 10px 0;
->>>>>>> Add RWD for search and Home menu
   }
 
   .menu {
@@ -352,25 +341,13 @@ header {
 }
 
 @media (max-width: 767px) {
-<<<<<<< HEAD
 
   header {
     .menu-bar {
-=======
-  header{
-    .menu-bar {
-      .nav-hamburger {
-        display: block;
-      }
-      #input-hamburger:checked + ul {
-        overflow: visible;
-      }
->>>>>>> Add RWD for search and Home menu
       .menu {
         z-index: 100;
         position: relative;
         right: 8em;
-<<<<<<< HEAD
 
         .nav-hamburger {
           display: block;
@@ -380,8 +357,6 @@ header {
           overflow: visible;
         }
 
-=======
->>>>>>> Add RWD for search and Home menu
         ul {
           flex-direction: column;
           overflow: hidden;
@@ -407,7 +382,3 @@ header {
   }
 
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> Add RWD for search and Home menu
