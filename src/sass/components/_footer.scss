@@ -88,7 +88,13 @@ footer {
 
   footer {
     .footer-menu{
+<<<<<<< HEAD
       text-align: center;
+=======
+
+        text-align: center;
+
+>>>>>>> Add RWD to footer
     }
 =======
 @media (max-width: 768px) {
@@ -104,6 +110,7 @@ footer {
         width: 100%;
       }
 <<<<<<< HEAD
+<<<<<<< HEAD
       .copyright p {
           text-align: left;
       }
@@ -118,8 +125,10 @@ footer {
           color: rgb(169,169,169);
           font-size: 14px;
           line-height: 26px;
+=======
+      .copyright p {
+>>>>>>> Add RWD to footer
           text-align: left;
-        }
       }
     }
   }

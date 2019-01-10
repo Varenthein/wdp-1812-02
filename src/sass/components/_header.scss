@@ -149,15 +149,7 @@
 
         span {
           background-color: $header-bg;
-<<<<<<< HEAD
-<<<<<<< HEAD
           border-radius: 1px;
-=======
-          border-radius: 1px 1px 1px 1px;
->>>>>>> Add RWD for search and Home menu
-=======
-          border-radius: 1px;
->>>>>>> Fix bugs
           height: 2px;
           width: 20px;
           display: block;
@@ -332,7 +324,6 @@
       .text-left {
         flex-grow: 2;
 
-<<<<<<< HEAD
         .header-left-menu {
           margin-right: 0.9rem;
         }
@@ -367,8 +358,6 @@
     }
   }
 }
-=======
->>>>>>> Add RWD for search and Home menu
 @media (min-width: 767px) and (max-width: 1200px) {
 
   .menu-bar {
@@ -426,6 +415,7 @@
       }
     }
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 =======
@@ -499,3 +489,6 @@
 =======
 >>>>>>> Add RWD for search and Home menu
 >>>>>>> Add RWD for search and Home menu
+=======
+}
+>>>>>>> Add RWD to footer
