@@ -83,12 +83,18 @@ footer {
   }
 }
 
+<<<<<<< HEAD
 @include media-breakpoint-down(sm) {
 
   footer {
     .footer-menu{
         text-align: center;
     }
+=======
+@media (max-width: 768px) {
+  
+  footer {
+>>>>>>> Add RWD to footer
     .bottom-bar {
       position: relative;
       .unidentify-object {
@@ -97,10 +103,25 @@ footer {
         left: 0;
         width: 100%;
       }
+<<<<<<< HEAD
       .copyright p {
           text-align: left;
       }
     }
   }
 
+=======
+      .copyright {
+        margin: 0;
+        p {
+          margin: 0;
+          color: rgb(169,169,169);
+          font-size: 14px;
+          line-height: 26px;
+          text-align: left;
+        }
+      }
+    }
+  }
+>>>>>>> Add RWD to footer
 }
