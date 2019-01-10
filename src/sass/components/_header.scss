@@ -149,15 +149,7 @@ header {
 
         span {
           background-color: $header-bg;
-<<<<<<< HEAD
-<<<<<<< HEAD
           border-radius: 1px;
-=======
-          border-radius: 1px 1px 1px 1px;
->>>>>>> Add RWD for search and Home menu
-=======
-          border-radius: 1px;
->>>>>>> Fix bugs
           height: 2px;
           width: 20px;
           display: block;
@@ -399,46 +391,10 @@ header {
           display: block;
         }
 
-<<<<<<< HEAD
         #input-hamburger:checked + ul {
           overflow: visible;
         }
 
-=======
-@media (min-width: 767px) and (max-width: 1200px) {
-
-  .menu-bar {
-    height: 105px;
-    .row {
-      flex-direction: column-reverse;
-    }
-  }
-
-  .search-form-sm {
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-  }
-
-  .menu {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 767px) {
-  header{
-    .menu-bar {
-      .nav-hamburger {
-        display: block;
-      }
-      #input-hamburger:checked + ul {
-        overflow: visible;
-      }
-      .menu {
-        z-index: 100;
-        position: relative;
-        right: 8em;
->>>>>>> Add RWD for search and Home menu
         ul {
           flex-direction: column;
           overflow: hidden;
@@ -462,8 +418,4 @@ header {
       }
     }
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> Add RWD for search and Home menu
 }
