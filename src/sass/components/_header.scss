@@ -342,16 +342,17 @@ header {
 @media (max-width: 767px) {
   header{
     .menu-bar {
-      .nav-hamburger {
-        display: block;
-      }
-      #input-hamburger:checked + ul {
-        overflow: visible;
-      }
       .menu {
         z-index: 100;
         position: relative;
         right: 8em;
+        .nav-hamburger {
+          display: block;
+        }
+        #input-hamburger:checked + ul {
+          overflow: visible;
+        }
+
         ul {
           flex-direction: column;
           overflow: hidden;
