@@ -39,7 +39,7 @@
   color: $primary;
 
   &:hover {
-    border: 1px solid $btn-active-text-black;
-    color: $btn-active-text-white;
+    border: 1px solid $btn-active-text-dark;
+    color: $btn-active-text-light;
   }
 }
