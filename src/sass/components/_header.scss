@@ -14,6 +14,7 @@ header {
         a {
           color: #ffffff;
           font-size: 13px;
+          @extend %elementsAnimation;
 
           &:hover {
             color: $primary;
@@ -81,6 +82,7 @@ header {
           align-items: center;
           justify-content: center;
           font-size: 20px;
+          @extend %elementsAnimation;
 
           i {
             margin-right: 5px;
@@ -176,6 +178,7 @@ header {
             border-top: 4px solid #ffffff;
             font-weight: 500;
             letter-spacing: 1px;
+            @extend %elementsAnimation;
 
             &:hover,
             &.active {
@@ -203,29 +206,90 @@ header {
         display: flex;
         align-items: center;
         position: relative;
+        cursor: pointer;
 
-        i:first-child {
+        &:hover {
+          background: $primary;
+        }
+          &:hover .subcategories {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+          }
+
+          &:hover .primary-category, &:hover i {
+            color: $category-menu-bg-color;
+          }
+
+        i {
           color: $primary;
           position: absolute;
           left: 10px;
           z-index: 0;
         }
 
-        i:last-child {
-          position: absolute;
-          right: 10px;
-          z-index: 0;
-        }
-
-        select {
-          -webkit-appearance: none;
-          border: 0;
-          background-color: transparent;
-          outline: none;
-          padding: 5px 30px 5px 35px;
-          font-size: 14px;
+        ul {
+          text-align: left;
+          display: inline;
+          margin: 0;
+          padding: 0 30px;
+          list-style: none;
           position: relative;
           z-index: 1;
+          li {
+            display: inline-block;
+            position: relative;
+            padding: 10px 20px;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            transition: all 0.2s;
+            color: $category-menu-color-black;
+            i {
+              position: absolute;
+              right: -10px;
+              left: auto;
+              z-index: 0;
+              top: 15px;
+              color: $category-menu-color-black;
+            }
+            ul {
+              padding: 0;
+              position: absolute;
+              top: 44px;
+              left: -31px;
+              border: 1px solid $form-border-color;
+              background: $category-menu-bg-color;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              box-shadow: none;
+              display: none;
+              opacity: 0;
+              visibility: hidden;
+              -webkit-transiton: opacity 0.2s;
+              -moz-transition: opacity 0.2s;
+              -ms-transition: opacity 0.2s;
+              -o-transition: opacity 0.2s;
+              -transition: opacity 0.2s;
+              li {
+                min-width: 240px;
+
+                &:hover {
+                  background: $primary;
+
+                  a {
+                    color: $category-menu-bg-color;
+                  }
+                }
+                a {
+                  text-decoration: none;
+                  display: block;
+                  color: $category-menu-color-black;
+                }
+              }
+            }
+          }
         }
       }
 
@@ -254,6 +318,7 @@ header {
     }
   }
 }
+
 
 @media (min-width: 767px) and (max-width: 1200px) {
 
@@ -317,3 +382,4 @@ header {
   }
 
 }
+
