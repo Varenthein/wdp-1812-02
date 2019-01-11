@@ -224,24 +224,20 @@ header {
     }
   }
 }
-@media (max-width: 767px) {
+@include media-breakpoint-down(md) {
   header {
     .top-bar {
       .text-left {
         flex-grow: 2;
 
-        ul {
-          li {
-            margin-right: 1rem;
-          }
+        .header-first-li {
+          margin-right: 0.9rem;
         }
       }
 
       .text-right {
-        ul {
-          li {
-            margin-left: 0.9rem;
-          }
+        .header-contact-li {
+          margin-left: 0.9rem;
         }
       }
       .header-links {
