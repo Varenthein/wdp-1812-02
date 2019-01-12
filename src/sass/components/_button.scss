@@ -36,3 +36,12 @@
     color: #ffffff;
   }
 }
+.status-buttons-active {
+  border: 1px solid $primary;
+  color: $primary;
+
+  &:hover {
+    border: 1px solid $btn-active-text-dark;
+    color: $btn-active-text-light;
+  }
+}
