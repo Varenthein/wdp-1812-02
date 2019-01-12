@@ -84,6 +84,7 @@ footer {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @include media-breakpoint-down(sm) {
 
 body{
@@ -98,6 +99,17 @@ body{
   
   footer {
 >>>>>>> Add RWD to footer
+=======
+@include media-breakpoint-down(sm) {
+
+body{
+  footer {
+    .footer-menu{
+      
+        text-align: center;
+
+    }
+>>>>>>> Add RWD to mobile, change to bootstrap mixins
     .bottom-bar {
       position: relative;
       .unidentify-object {
@@ -108,6 +120,7 @@ body{
       }
       .copyright {
 <<<<<<< HEAD
+<<<<<<< HEAD
         p {
 =======
         margin: 0;
@@ -117,6 +130,9 @@ body{
           font-size: 14px;
           line-height: 26px;
 >>>>>>> Add RWD to footer
+=======
+        p {
+>>>>>>> Add RWD to mobile, change to bootstrap mixins
           text-align: left;
         }
       }
@@ -124,6 +140,10 @@ body{
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 >>>>>>> Add RWD to footer
+=======
+}
+>>>>>>> Add RWD to mobile, change to bootstrap mixins
