@@ -103,3 +103,46 @@
   }
 
 }
+.section--products{
+  .container {
+    .controls {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        border: none;
+        border-radius: 50%;
+        background-color: $primary;
+        margin: 5px 5px 25px 5px;
+        padding: 10px;
+        @extend %elementsAnimation;
+
+        &:hover {
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+    .tns-nav {
+      display: flex;
+      justify-content: flex-end;
+
+
+      button {
+        border: none;
+        border-radius: 100%;
+        margin: 5px;
+        height: 13px;
+        width: 13px;
+        @extend %elementsAnimation;
+        
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
+    .tns-nav-active {
+      background-color: $primary;
+    }
+}
+}
