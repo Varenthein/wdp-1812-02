@@ -340,18 +340,28 @@ header {
 }
 
 @media (max-width: 767px) {
+<<<<<<< HEAD
 
   header {
+=======
+  header{
+>>>>>>> 5d32a2cdba72fd08885a178687bde1b44bc42eb0
     .menu-bar {
       .menu {
         z-index: 100;
         position: relative;
         right: 8em;
+<<<<<<< HEAD
 
         .nav-hamburger {
           display: block;
         }
 
+=======
+        .nav-hamburger {
+          display: block;
+        }
+>>>>>>> 5d32a2cdba72fd08885a178687bde1b44bc42eb0
         #input-hamburger:checked + ul {
           overflow: visible;
         }
