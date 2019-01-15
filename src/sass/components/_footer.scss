@@ -87,12 +87,9 @@ footer {
 <<<<<<< HEAD
 @include media-breakpoint-down(sm) {
 
-body{
   footer {
     .footer-menu{
-      
         text-align: center;
-
     }
 =======
 @media (max-width: 768px) {
@@ -118,6 +115,7 @@ body{
         left: 0;
         width: 100%;
       }
+<<<<<<< HEAD
       .copyright {
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -133,12 +131,15 @@ body{
 =======
         p {
 >>>>>>> Add RWD to mobile, change to bootstrap mixins
+=======
+      .copyright p {
+>>>>>>> Fix bugs
           text-align: left;
-        }
       }
     }
   }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 }
@@ -147,3 +148,5 @@ body{
 =======
 }
 >>>>>>> Add RWD to mobile, change to bootstrap mixins
+=======
+>>>>>>> Fix bugs
