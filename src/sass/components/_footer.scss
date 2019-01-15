@@ -85,12 +85,9 @@ footer {
 
 @include media-breakpoint-down(sm) {
 
-body{
   footer {
     .footer-menu{
-      
         text-align: center;
-
     }
     .bottom-bar {
       position: relative;
@@ -100,12 +97,9 @@ body{
         left: 0;
         width: 100%;
       }
-      .copyright {
-        p {
+      .copyright p {
           text-align: left;
-        }
       }
     }
   }
-}
 }
