@@ -50,12 +50,21 @@
         @extend .far;
         @extend .fa-star;
 
+        &:hover {
+            @extend .fas;
+            color: $primary;
+        }
+
         &.full {
           @extend .fas;
+          &:hover {
+            color: $primary;
+          }
         }
       }
     }
   }
+
 
   .line {
     margin: 0 10px;
@@ -102,4 +111,16 @@
     }
   }
 
+}
+.blue {
+  &.fa-star {
+    @extend .fas;
+    color: $primary;
+  }
+}
+.blue2 {
+  &.fa-star {
+    @extend .fas;
+    color: $primary;
+  }
 }
