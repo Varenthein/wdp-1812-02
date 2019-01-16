@@ -317,6 +317,7 @@
       }
     }
   }
+<<<<<<< HEAD
 }
 @include media-breakpoint-down(md) {
   header {
@@ -359,6 +360,10 @@
   }
 }
 @media (min-width: 767px) and (max-width: 1200px) {
+=======
+
+@include media-breakpoint-between(md, lg) {
+>>>>>>> Add bootstrap mixins for RWD, fix nesting elements
 
   .menu-bar {
     height: 105px;
@@ -380,6 +385,7 @@
 
 @include media-breakpoint-down(sm) {
 
+<<<<<<< HEAD
   .menu-bar {
     .menu {
       z-index: 100;
@@ -446,6 +452,8 @@
 
 @media (max-width: 767px) {
   header{
+=======
+>>>>>>> Add bootstrap mixins for RWD, fix nesting elements
     .menu-bar {
       .menu {
         z-index: 100;
@@ -457,30 +465,31 @@
         #input-hamburger:checked + ul {
           overflow: visible;
         }
-
-        ul {
-          flex-direction: column;
-          overflow: hidden;
-          max-height: 0;
-          width: 50rem;
-          z-index: 1000;
-          li {
-            background-color: $primary;
-            display: inline-block;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
-            a {
-              border-top: 4px solid $primary;
-              justify-content: center;
-              align-items: center;
-            }
+      }
+      .menu-elements {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        width: 50rem;
+        z-index: 1000;
+        li {
+          background-color: $primary;
+          display: inline-block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 100%;
+          min-width: 0;
+          a {
+            border-top: 4px solid $primary;
+            justify-content: center;
+            align-items: center;
           }
         }
       }
     }
+<<<<<<< HEAD
   }
+<<<<<<< HEAD
 
 }
 >>>>>>> Add RWD for search and Home menu
@@ -490,5 +499,9 @@
 >>>>>>> Add RWD for search and Home menu
 >>>>>>> Add RWD for search and Home menu
 =======
+=======
+=======
+>>>>>>> Add bootstrap mixins for RWD, fix nesting elements
+>>>>>>> Add bootstrap mixins for RWD, fix nesting elements
 }
 >>>>>>> Add RWD to footer
