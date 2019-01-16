@@ -1,5 +1,3 @@
-console.log('hello');
-
 var slider = tns({
     container: '.my-slider',
     items: 4,
