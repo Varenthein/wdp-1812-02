@@ -1,4 +1,4 @@
-header {
+
   .top-bar {
     background-color: $header-topbar-bg;
 
@@ -131,7 +131,7 @@ header {
         opacity: 0;
         position: absolute;
         bottom: 10%;
-        left: 70%;
+        left: 75%;
       }
 
       .nav-hamburger {
@@ -145,7 +145,7 @@ header {
         cursor: pointer;
         position: absolute;
         bottom: 10%;
-        left: 70%;
+        left: 75%;
 
         span {
           background-color: $header-bg;
@@ -156,40 +156,40 @@ header {
           margin: 4px auto;
         }
       }
+    }
 
-      ul {
-        margin: 0;
-        padding: 0;
+    .menu-elements {
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        list-style: none;
         display: flex;
+        align-items: stretch;
 
-        li {
-          list-style: none;
+        a {
+          color: $text-color;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 1rem;
+          text-decoration: none;
           display: flex;
-          align-items: stretch;
+          align-items: center;
+          border-top: 4px solid #ffffff;
+          font-weight: 500;
+          letter-spacing: 1px;
+          @extend %elementsAnimation;
 
-          a {
-            color: $text-color;
-            text-transform: uppercase;
-            font-size: 12px;
-            padding: 1rem;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            border-top: 4px solid #ffffff;
-            font-weight: 500;
-            letter-spacing: 1px;
-            @extend %elementsAnimation;
+          &:hover,
+          &.active {
+            background-color: $primary;
+            color: #ffffff;
+            border-color: $primary;
+          }
 
-            &:hover,
-            &.active {
-              background-color: $primary;
-              color: #ffffff;
-              border-color: $primary;
-            }
-
-            &.active {
-              border-color: $text-color;
-            }
+          &.active {
+            border-color: $text-color;
           }
         }
       }
@@ -378,9 +378,8 @@ header {
   }
 }
 
-@media (max-width: 767px) {
+@include media-breakpoint-down(sm) {
 
-  header {
     .menu-bar {
       .menu {
         z-index: 100;
@@ -394,25 +393,24 @@ header {
         #input-hamburger:checked + ul {
           overflow: visible;
         }
-
-        ul {
-          flex-direction: column;
-          overflow: hidden;
-          max-height: 0;
-          width: 50rem;
-          z-index: 1000;
-          li {
-            background-color: $primary;
-            display: inline-block;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
-            a {
-              border-top: 4px solid $primary;
-              justify-content: center;
-              align-items: center;
-            }
+      }
+      .menu-elements {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        width: 50rem;
+        z-index: 1000;
+        li {
+          background-color: $primary;
+          display: inline-block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 100%;
+          min-width: 0;
+          a {
+            border-top: 4px solid $primary;
+            justify-content: center;
+            align-items: center;
           }
         }
       }
