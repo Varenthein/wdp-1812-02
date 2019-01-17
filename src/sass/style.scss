@@ -22,3 +22,10 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+a.not-underline {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
