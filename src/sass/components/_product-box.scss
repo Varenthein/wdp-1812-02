@@ -112,13 +112,13 @@
   }
 
 }
-.blue {
+.rating-star-fill {
   &.fa-star {
     @extend .fas;
     color: $primary;
   }
 }
-.blue2 {
+.rating-star-hover-fill {
   &.fa-star {
     @extend .fas;
     color: $primary;
