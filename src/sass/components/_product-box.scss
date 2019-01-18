@@ -127,7 +127,6 @@
       display: flex;
       justify-content: flex-end;
 
-
       button {
         border: none;
         border-radius: 100%;
@@ -135,7 +134,7 @@
         height: 13px;
         width: 13px;
         @extend %elementsAnimation;
-        
+
         &:hover {
           background-color: $primary;
         }
@@ -144,5 +143,5 @@
     .tns-nav-active {
       background-color: $primary;
     }
-}
+  }
 }
