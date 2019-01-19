@@ -50,12 +50,21 @@
         @extend .far;
         @extend .fa-star;
 
+        &:hover {
+            @extend .fas;
+            color: $primary;
+        }
+
         &.full {
           @extend .fas;
+          &:hover {
+            color: $primary;
+          }
         }
       }
     }
   }
+
 
   .line {
     margin: 0 10px;
@@ -102,4 +111,16 @@
     }
   }
 
+}
+.rating-star-fill {
+  &.fa-star {
+    @extend .fas;
+    color: $primary;
+  }
+}
+.rating-star-hover-fill {
+  &.fa-star {
+    @extend .fas;
+    color: $primary;
+  }
 }
