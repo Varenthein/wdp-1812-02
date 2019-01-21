@@ -317,48 +317,8 @@
       }
     }
   }
-}
-@include media-breakpoint-down(md) {
 
-  header {
-    .top-bar {
-      .text-left {
-        flex-grow: 2;
-
-        .header-left-menu {
-          margin-right: 0.9rem;
-        }
-      }
-
-      .text-right {
-        .header-right-menu {
-          margin-left: 0.9rem;
-        }
-      }
-      .header-links {
-        display: none;
-      }
-    }
-    .company-claim {
-      .phone-number {
-        order: 3;
-        flex-basis: 100%;
-        p {
-          font-size: 14px;
-        }
-      }
-      .logo {
-        order: 1;
-      }
-      .cart {
-        order: 2;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-      }
-    }
-  }
-}
+@include media-breakpoint-between(md, lg) {
 
   .menu-bar {
     height: 105px;
@@ -386,9 +346,11 @@
         position: relative;
         right: 8em;
 
-        .nav-hamburger {
-          display: block;
-        }
+  .menu-bar {
+    .menu {
+      z-index: 100;
+      position: relative;
+      right: 8em;
 
         #input-hamburger:checked + ul {
           overflow: visible;
