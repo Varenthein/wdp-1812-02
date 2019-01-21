@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Furnitures shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -178,8 +179,9 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+
+      <div class="my-slider">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
               <img class="product-picture" src="./images/product1.png" alt="Product1">
@@ -212,7 +214,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
               <img class="product-picture" src="./images/product2.png" alt="Product2">
@@ -245,7 +247,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
               <img class="product-picture" src="./images/product3.png" alt="Product3">
@@ -278,7 +280,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
               <img class="product-picture" src="./images/product4.png" alt="Product4">
@@ -311,7 +313,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
               <img class="product-picture" src="./images/product5.png" alt="Product5">
@@ -343,7 +345,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
               <img class="product-picture" src="./images/product6.png" alt="Product6">
@@ -375,7 +377,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
               <img class="product-picture" src="./images/product7.png" alt="Product7">
@@ -407,7 +409,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
               <img class="product-picture" src="./images/product8.png" alt="Product8">
@@ -439,6 +441,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="controls">
+        <button>Prev</button>
+        <button>Next</button>
       </div>
     </div>
   </div>
@@ -536,7 +542,7 @@
     <div class="footer-menu">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-12 col-sm-6 col-md">
             <div class="menu-wrapper">
               <h6>Information</h6>
               <ul>
@@ -547,7 +553,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-6 col-md">
             <div class="menu-wrapper">
               <h6>My account</h6>
               <ul>
@@ -558,7 +564,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-6 col-md">
             <div class="menu-wrapper">
               <h6>Information</h6>
               <ul>
@@ -569,7 +575,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-6 col-md">
             <div class="menu-wrapper">
               <h6>Orders</h6>
               <ul>
@@ -587,8 +593,8 @@
     <div class="bottom-bar">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col"></div>
-          <div class="col copyright text-center">
+          <div class="col unidentify-object"></div>
+          <div class="col copyright">
             <p>©Copyright 2016 Bazar | All Rights Reserved</p>
           </div>
           <div class="col socialmedia text-right">
@@ -609,6 +615,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
   <script src="./scripts/bootstrap.min.js"></script>
   <script src="./scripts/app.js"></script>
 </body>
