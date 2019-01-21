@@ -318,8 +318,46 @@ header {
     }
   }
 }
+@include media-breakpoint-down(md) {
+  header {
+    .top-bar {
+      .text-left {
+        flex-grow: 2;
 
+        .header-left-menu {
+          margin-right: 0.9rem;
+        }
+      }
 
+      .text-right {
+        .header-right-menu {
+          margin-left: 0.9rem;
+        }
+      }
+      .header-links {
+        display: none;
+      }
+    }
+    .company-claim {
+      .phone-number {
+        order: 3;
+        flex-basis: 100%;
+        p {
+          font-size: 14px;
+        }
+      }
+      .logo {
+        order: 1;
+      }
+      .cart {
+        order: 2;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
 @media (min-width: 767px) and (max-width: 1200px) {
 
   .menu-bar {
@@ -380,5 +418,4 @@ header {
       }
     }
   }
-
 }
