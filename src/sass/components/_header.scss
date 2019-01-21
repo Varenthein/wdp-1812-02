@@ -317,7 +317,6 @@
       }
     }
   }
-<<<<<<< HEAD
 }
 @include media-breakpoint-down(md) {
   header {
@@ -359,11 +358,6 @@
     }
   }
 }
-@media (min-width: 767px) and (max-width: 1200px) {
-=======
-
-@include media-breakpoint-between(md, lg) {
->>>>>>> Add bootstrap mixins for RWD, fix nesting elements
 
   .menu-bar {
     height: 105px;
@@ -487,8 +481,8 @@
         }
       }
     }
-<<<<<<< HEAD
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 }
@@ -503,5 +497,7 @@
 =======
 >>>>>>> Add bootstrap mixins for RWD, fix nesting elements
 >>>>>>> Add bootstrap mixins for RWD, fix nesting elements
+=======
+>>>>>>> Fix indentation
 }
 >>>>>>> Add RWD to footer
