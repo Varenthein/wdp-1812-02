@@ -13,6 +13,16 @@
     text-decoration: none;
   }
 }
+.btn-main-more {
+  background-color: $btn-more-color;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 10px 30px;
+  margin: 0 75px;
+  cursor: pointer;
+}
 
 .btn-main-small {
   @extend .btn-main;
