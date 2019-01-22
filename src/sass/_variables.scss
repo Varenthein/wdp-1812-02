@@ -10,7 +10,10 @@ $category-menu-bg-color: #ffffff;
 $category-menu-color-black: #000000;
 
 $promotion-dots-color: #a5a5a5;
-$top-bar-color: #ffffff;
+$top-bar-color: $category-menu-bg-color;
+$counter-time-color: $top-bar-color;
+$counter-time-color-background: rgba(42,42,42,0.8);
+$contentBox-content-color: $counter-time-color;
 
 $text-color: #2a2a2a;
 
