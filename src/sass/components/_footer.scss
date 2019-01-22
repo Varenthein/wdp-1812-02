@@ -19,6 +19,7 @@ footer {
             font-size: 14px;
             line-height: 30px;
             color: rgb(169,169,169);
+            @extend %elementsAnimation;
 
             &:hover {
               color: #ffffff;
@@ -47,11 +48,13 @@ footer {
     }
 
     .copyright {
+      margin: 0 auto;
       p {
         margin: 0;
         color: rgb(169,169,169);
         font-size: 14px;
         line-height: 26px;
+        text-align: center;
       }
     }
 
@@ -68,6 +71,7 @@ footer {
           a {
             color: rgb(169,169,169);
             text-decoration: none;
+            @extend %elementsAnimation;
 
             &:hover {
               color: $primary;
@@ -77,4 +81,26 @@ footer {
       }
     }
   }
+}
+
+@include media-breakpoint-down(sm) {
+
+  footer {
+    .footer-menu{
+        text-align: center;
+    }
+    .bottom-bar {
+      position: relative;
+      .unidentify-object {
+        position: absolute;
+        bottom: 90%;
+        left: 0;
+        width: 100%;
+      }
+      .copyright p {
+          text-align: left;
+      }
+    }
+  }
+
 }

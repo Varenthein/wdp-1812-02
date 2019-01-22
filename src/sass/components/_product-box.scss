@@ -5,15 +5,11 @@
 
   .photo {
     position: relative;
-    padding: 80% 10px 0 10px;
-    background: {
-      color: #f4f5f7;
-      size: contain;
-      position: center;
-      repeat: no-repeat;
-    }
     overflow: hidden;
     align-items: flex-end;
+    .product-picture {
+      @include fullSize;
+    }
 
     .sale {
       position: absolute;
@@ -28,7 +24,21 @@
 
     .buttons {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      bottom: 0%;
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    .buttons {
+      opacity: 1;
+    }
+    .no-hover {
+      background-color: $primary; 
     }
   }
 
@@ -46,7 +56,7 @@
     .stars {
       a {
         text-decoration: none;
-        color: rgb(42,42,42);
+        color: rgb(42, 42, 42);
         @extend .far;
         @extend .fa-star;
 
@@ -78,5 +88,70 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .outlines {
+      width: 40%;
+    }
+    .price {
+      width: 60%;
+      display: flex;
+      justify-content: flex-end;
+      .old-price {
+        position: relative;
+        font-size: 13px;
+        line-height: 24px;
+        padding: 5px 10px;
+        color: #a5a5a5;
+        &::before {
+          border-bottom: 1px solid black;
+          position: absolute;
+          content: '';
+          width: 70%;
+          height: 35%;
+        }
+      }
+    }
+  }
+
+}
+.section--products{
+  .container {
+    .controls {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        border: none;
+        border-radius: 50%;
+        background-color: $primary;
+        margin: 5px 5px 25px 5px;
+        padding: 10px;
+        @extend %elementsAnimation;
+
+        &:hover {
+          color: #ffffff;
+          cursor: pointer;
+        }
+      }
+    }
+    .tns-nav {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        border: none;
+        border-radius: 100%;
+        margin: 5px;
+        height: 13px;
+        width: 13px;
+        @extend %elementsAnimation;
+
+        &:hover {
+          background-color: $primary;
+        }
+      }
+    }
+    .tns-nav-active {
+      background-color: $primary;
+    }
   }
 }

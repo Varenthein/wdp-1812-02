@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Furnitures shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -16,16 +17,16 @@
         <div class="row">
           <div class="col text-left">
             <ul>
-              <li><a href="#">USD <i class="fas fa-caret-down"></i></a></li>
-              <li><a href="#">English <i class="fas fa-caret-down"></i></a></li>
-              <li><a href="#">Help <i class="fas fa-caret-down"></i></a></li>
+              <li class="header-left-menu"><a href="#">USD <i class="fas fa-caret-down"></i></a></li>
+              <li class="header-left-menu"><a href="#">English <i class="fas fa-caret-down"></i></a></li>
+              <li class="header-left-menu"><a href="#">Help <i class="fas fa-caret-down"></i></a></li>
             </ul>
           </div>
           <div class="col text-right">
             <ul>
-              <li><a href="#"><i class="fas fa-user"></i> Login</a></li>
-              <li><a href="#"><i class="fas fa-lock"></i> Register</a></li>
-              <li><a href="#"><i class="fas fa-bars"></i></a></li>
+              <li class="header-right-menu"><a href="#"><i class="fas fa-user"></i> <span class="header-links">Login</span></a></li>
+              <li class="header-right-menu"><a href="#"><i class="fas fa-lock"></i> <span class="header-links">Register</span></a></li>
+              <li class="header-right-menu"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
           </div>
         </div>
@@ -54,14 +55,19 @@
     <div class="menu-bar">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col">
+          <div class="col col-sm-pull-6 search-form-sm">
             <form action="" class="search-form">
               <div class="category">
                 <i class="fas fa-list-ul"></i>
-                <select name="" id="">
-                  <option value="">Select a category</option>
-                </select>
-                <i class="fas fa-caret-down"></i>
+                <ul>
+                  <li class="primary-category">
+                    Select a category<i class="fas fa-caret-down"></i>
+                    <ul class="subcategories">
+                      <li><a href="#">First</a></li>
+                      <li><a href="#">Second</a></li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
               <div class="search-field">
                 <input placeholder="Search products..." type="text">
@@ -69,7 +75,13 @@
               </div>
             </form>
           </div>
-          <div class="col-auto menu">
+          <div class="col-auto col-sm-push-6 menu">
+            <label class="nav-hamburger" for="input-hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <input type="checkbox" id="input-hamburger">
             <ul>
               <li><a href="#" class="active">Home</a></li>
               <li><a href="#">Furniture</a></li>
@@ -87,46 +99,54 @@
   <div class="section--features">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col col-lg-3 col-sm-6">
           <div class="feature-box active">
             <div class="icon">
               <i class="fas fa-truck"></i>
             </div>
             <div class="content">
-              <h5>Free shipping</h5>
+              <h5>
+                <a href="#">Free shipping</a>
+              </h5>
               <p>All orders</p>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-lg-3 col-sm-6">
           <div class="feature-box">
             <div class="icon">
               <i class="fas fa-headphones"></i>
             </div>
             <div class="content">
-              <h5>24/7 customer</h5>
+              <h5>
+                <a href="#"24/7 customer</a>
+              </h5>
               <p>support</p>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-lg-3 col-sm-6">
           <div class="feature-box">
             <div class="icon">
               <i class="fas fa-reply-all"></i>
             </div>
             <div class="content">
-              <h5>Money back</h5>
+              <h5>
+                <a href="#">Money back</a>
+              </h5>
               <p>guarantee</p>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col col-lg-3 col-sm-6">
           <div class="feature-box">
             <div class="icon">
               <i class="fas fa-bullhorn"></i>
             </div>
             <div class="content">
-              <h5>Member discount</h5>
+              <h5>
+                <a href="#">Member discount</a>
+              </h5>
               <p>First order</p>
             </div>
           </div>
@@ -159,10 +179,144 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-3">
+
+      <div class="my-slider">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
+              <img class="product-picture" src="./images/product1.png" alt="Product1">
+              <div class="sale">sale</div>
+              <div class="buttons">
+                <a href="#" class="btn-main-small">Quick View</a>
+                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+              </div>
+            </div>
+            <div class="content">
+              <h5>Aenean Ru Bristique</h5>
+              <div class="stars">
+                <a href="#" class="full"></a>
+                <a href="#" class="full"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="actions">
+              <div class="outlines">
+                <a href="#" class="btn-outline status-buttons-active"><i class="far fa-heart"></i></a>
+                <a href="#" class="btn-outline status-buttons-active"><i class="fas fa-exchange-alt"></i></a>
+              </div>
+              <div class="price">
+                <div class="old-price">$ 45.00</div>
+                <div class="btn-main-small no-hover">$ 30.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="product-box">
+            <div class="photo">
+              <img class="product-picture" src="./images/product2.png" alt="Product2">
+              <div class="sale">sale</div>
+              <div class="buttons">
+                <a href="#" class="btn-main-small">Quick View</a>
+                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+              </div>
+            </div>
+            <div class="content">
+              <h5>Aenean Ru Bristique</h5>
+              <div class="stars">
+                <a href="#" class="full"></a>
+                <a href="#" class="full"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="actions">
+              <div class="outlines">
+                <a href="#" class="btn-outline status-buttons-active"><i class="far fa-heart"></i></a>
+                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+              </div>
+              <div class="price">
+                <div class="old-price">$ 45.00</div>
+                <div class="btn-main-small no-hover">$ 30.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="product-box">
+            <div class="photo">
+              <img class="product-picture" src="./images/product3.png" alt="Product3">
+              <div class="sale">sale</div>
+              <div class="buttons">
+                <a href="#" class="btn-main-small">Quick View</a>
+                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+              </div>
+            </div>
+            <div class="content">
+              <h5>Aenean Ru Bristique</h5>
+              <div class="stars">
+                <a href="#" class="full"></a>
+                <a href="#" class="full"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="actions">
+              <div class="outlines">
+                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                <a href="#" class="btn-outline status-buttons-active"><i class="fas fa-exchange-alt"></i></a>
+              </div>
+              <div class="price">
+                <div class="old-price">$ 45.00</div>
+                <div class="btn-main-small no-hover">$ 30.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="product-box">
+            <div class="photo">
+              <img class="product-picture" src="./images/product4.png" alt="Product4">
+              <div class="sale">sale</div>
+              <div class="buttons">
+                <a href="#" class="btn-main-small">Quick View</a>
+                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
+              </div>
+            </div>
+            <div class="content">
+              <h5>Aenean Ru Bristique</h5>
+              <div class="stars">
+                <a href="#" class="full"></a>
+                <a href="#" class="full"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="actions">
+              <div class="outlines">
+                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
+                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
+              </div>
+              <div class="price">
+                  <div class="old-price">$ 45.00</div>
+                <div class="btn-main-small no-hover">$ 30.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="product-box">
+            <div class="photo">
+              <img class="product-picture" src="./images/product5.png" alt="Product5">
               <div class="sale">sale</div>
               <div class="buttons">
                 <a href="#" class="btn-main-small">Quick View</a>
@@ -191,9 +345,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
+              <img class="product-picture" src="./images/product6.png" alt="Product6">
               <div class="sale">sale</div>
               <div class="buttons">
                 <a href="#" class="btn-main-small">Quick View</a>
@@ -222,9 +377,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
+              <img class="product-picture" src="./images/product7.png" alt="Product7">
               <div class="sale">sale</div>
               <div class="buttons">
                 <a href="#" class="btn-main-small">Quick View</a>
@@ -253,9 +409,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
+        <div class="slide">
           <div class="product-box">
             <div class="photo">
+              <img class="product-picture" src="./images/product8.png" alt="Product8">
               <div class="sale">sale</div>
               <div class="buttons">
                 <a href="#" class="btn-main-small">Quick View</a>
@@ -284,130 +441,10 @@
             </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="product-box">
-            <div class="photo">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="btn-main-small no-hover">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="product-box">
-            <div class="photo">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="btn-main-small no-hover">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="product-box">
-            <div class="photo">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="btn-main-small no-hover">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="product-box">
-            <div class="photo">
-              <div class="sale">sale</div>
-              <div class="buttons">
-                <a href="#" class="btn-main-small">Quick View</a>
-                <a href="#" class="btn-main-small"><i class="fa fa-shopping-basket"></i> ADD TO CART</a>
-              </div>
-            </div>
-            <div class="content">
-              <h5>Aenean Ru Bristique</h5>
-              <div class="stars">
-                <a href="#" class="full"></a>
-                <a href="#" class="full"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
-              </div>
-            </div>
-            <div class="line"></div>
-            <div class="actions">
-              <div class="outlines">
-                <a href="#" class="btn-outline"><i class="far fa-heart"></i></a>
-                <a href="#" class="btn-outline"><i class="fas fa-exchange-alt"></i></a>
-              </div>
-              <div class="price">
-                <div class="btn-main-small no-hover">$ 30.00</div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div class="controls">
+        <button>Prev</button>
+        <button>Next</button>
       </div>
     </div>
   </div>
@@ -433,6 +470,7 @@
           <a href="#" class="not-underline">
           <div class="post-box">
             <div class="cover">
+              <img class="blog-picture" src="./images/blog1.png" alt="Blog Picture 1">
               <div class="details">
                 <div class="date">
                   <i class="fas fa-calendar-alt"></i> 15 Jan 2016
@@ -458,6 +496,7 @@
           <div class="post-box">
             <a href="#" class="not-underline">
             <div class="cover">
+              <img class="blog-picture" src="./images/blog2.png" alt="Blog Picture 2">
               <div class="details">
                 <div class="date">
                   <i class="fas fa-calendar-alt"></i> 15 Jan 2016
@@ -475,14 +514,15 @@
                 <div class="btn-main-more">Read more</div>
               </div>
             </div>
-            </a>
           </div>
           </a>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12">
           <a href="#" class="not-underline">
+        <div class="col-lg-4  col-md-6 col-sm-12">
           <div class="post-box">
             <div class="cover">
+              <img class="blog-picture" src="./images/blog3.png" alt="Blog Picture 3">
               <div class="details">
                 <div class="date">
                   <i class="fas fa-calendar-alt"></i> 15 Jan 2016
@@ -510,7 +550,7 @@
     <div class="footer-menu">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-12 col-sm-6 col-md">
             <div class="menu-wrapper">
               <h6>Information</h6>
               <ul>
@@ -521,7 +561,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-6 col-md">
             <div class="menu-wrapper">
               <h6>My account</h6>
               <ul>
@@ -532,7 +572,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-6 col-md">
             <div class="menu-wrapper">
               <h6>Information</h6>
               <ul>
@@ -543,7 +583,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-6 col-md">
             <div class="menu-wrapper">
               <h6>Orders</h6>
               <ul>
@@ -561,8 +601,8 @@
     <div class="bottom-bar">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col"></div>
-          <div class="col copyright text-center">
+          <div class="col unidentify-object"></div>
+          <div class="col copyright">
             <p>©Copyright 2016 Bazar | All Rights Reserved</p>
           </div>
           <div class="col socialmedia text-right">
@@ -583,6 +623,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
   <script src="./scripts/bootstrap.min.js"></script>
   <script src="./scripts/app.js"></script>
 </body>

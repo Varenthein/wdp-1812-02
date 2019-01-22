@@ -39,9 +39,11 @@
     margin-top: -0.5rem;
     letter-spacing: 1px;
 
-    h5 {
+    h5 a {
       font-weight: 600;
       margin: 0;
+      text-decoration: none;
+      color: $text-color;
     }
 
     p {
@@ -49,7 +51,10 @@
     }
   }
 
-  &.active {
+  &:hover {
+    h5 a {
+      color: $primary;
+    }
     i {
       background-color: $primary;
       color: #ffffff;
@@ -59,5 +64,11 @@
     .content {
       color: $primary;
     }
+  }
+}
+
+@media (max-width: 992px) {
+  .feature-box {
+    margin-top: 60px;
   }
 }
