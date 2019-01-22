@@ -317,48 +317,8 @@
       }
     }
   }
-}
-@include media-breakpoint-down(md) {
-  header {
-    .top-bar {
-      .text-left {
-        flex-grow: 2;
 
-        .header-left-menu {
-          margin-right: 0.9rem;
-        }
-      }
-
-      .text-right {
-        .header-right-menu {
-          margin-left: 0.9rem;
-        }
-      }
-      .header-links {
-        display: none;
-      }
-    }
-    .company-claim {
-      .phone-number {
-        order: 3;
-        flex-basis: 100%;
-        p {
-          font-size: 14px;
-        }
-      }
-      .logo {
-        order: 1;
-      }
-      .cart {
-        order: 2;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-      }
-    }
-  }
-}
-@media (min-width: 767px) and (max-width: 1200px) {
+@include media-breakpoint-between(md, lg) {
 
   .menu-bar {
     height: 105px;
@@ -380,12 +340,22 @@
 
 @include media-breakpoint-down(sm) {
 
+<<<<<<< HEAD
+=======
+    .menu-bar {
+      .menu {
+        z-index: 100;
+        position: relative;
+        right: 8em;
+
+>>>>>>> ee409f8233139a7faa3f2d722d99c1876f432ce8
   .menu-bar {
     .menu {
       z-index: 100;
       position: relative;
       right: 8em;
 
+<<<<<<< HEAD
       .nav-hamburger {
         display: block;
       }
@@ -411,9 +381,36 @@
           border-top: 4px solid $primary;
           justify-content: center;
           align-items: center;
+=======
+        #input-hamburger:checked + ul {
+          overflow: visible;
+        }
+      }
+      .menu-elements {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        width: 50rem;
+        z-index: 1000;
+        li {
+          background-color: $primary;
+          display: inline-block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 100%;
+          min-width: 0;
+          a {
+            border-top: 4px solid $primary;
+            justify-content: center;
+            align-items: center;
+          }
+>>>>>>> ee409f8233139a7faa3f2d722d99c1876f432ce8
         }
       }
     }
   }
 }
+<<<<<<< HEAD
 >>>>>>> Add RWD for search and Home menu
+=======
+>>>>>>> ee409f8233139a7faa3f2d722d99c1876f432ce8
