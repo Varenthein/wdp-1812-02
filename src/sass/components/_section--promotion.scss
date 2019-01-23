@@ -1,0 +1,255 @@
+.section--promotion {
+  padding: 0 0 1.875rem 0;
+
+  .promotion {
+    height: 530px;
+    padding: 0 30px;
+
+    .top-bar {
+      background: $text-color;
+      height: 50px;
+      color: $top-bar-color;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 7px 30px;
+      position: relative;
+
+      .dots {
+        position: relative;
+        right: -120px;
+
+        ul {
+          margin: 0;
+          padding-left: 1rem;
+          list-style: none;
+          width: 90px;
+          transform: translateY(15px);
+          left: 90px;
+          bottom: 20px;
+
+          li {
+            width: 15px;
+            height: 15px;
+            background: $promotion-dots-color;
+            margin: 4px;
+            border-radius: 50%;
+
+            &:hover,
+            &.active {
+              background: $primary;
+            }
+          }
+        }
+      }
+    }
+
+    .photo {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+
+      .hover {
+        opacity: 0;
+        height: 100%;
+        transition: .3s;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        .btn-main {
+          margin-top: 100px;
+          text-transform: uppercase;
+          font-weight: 400;
+          border: none;
+        }
+
+        .counter {
+          margin-top: 40px;
+
+          .time {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            background: $counter-time-color-background;
+            border-radius: 50%;
+            margin: 2px;
+            color: white;
+            text-transform: uppercase;
+            padding-top: 15px;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+
+            span {
+              margin-top: 5px;
+              display: block;
+              font-size: 0.9rem;
+              line-height: 8px;
+            }
+          }
+        }
+
+      }
+    }
+
+    .photo1 {
+      background-image: url(../images/promotion/sofa.jpg);
+    }
+
+    .photo2 {
+      background-image: url(../images/promotion/baby.jpg);
+    }
+
+    .photo3 {
+      background-image: url(../images/promotion/room.jpg);
+    }
+
+    .bottom-bar {
+
+      p {
+        font-weight: 700;
+        font-size: 1.2em;
+        margin: 10px 0;
+        text-align: center;
+      }
+
+      .stars {
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: $text-color;
+          display: inline-block;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          line-height: 1;
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 400;
+
+          &.full {
+            font-weight: 900;
+          }
+          &:before {
+            content: "\f005";
+          }
+        }
+      }
+
+      .slider {
+        width: 100%;
+        height: 1px;
+        background: black;
+        margin: 15px 0;
+        position: relative;
+
+        .slide1 {
+          width: 20%;
+          height: 5px;
+          background: $primary;
+          position: absolute;
+          top: 0;
+          left: 40%;
+        }
+      }
+      .price {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 15px;
+        bottom: 0;
+
+        .price-old {
+          font-size: 13px;
+          color: $promotion-dots-color;
+          padding: 5px 10px;
+          text-decoration: line-through $text-color;
+        }
+      }
+    }
+
+    .furniture {
+      max-height: 490px;
+      height: 490px;
+      padding: 0;
+
+      .carousel-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .furniture1 {
+        background: url(../images/promotion/fur1.jpg);
+      }
+
+      .furniture2 {
+        background: url(../images/promotion/fur2.jpg);
+      }
+
+      .furniture3 {
+        background: url(../images/promotion/fur3.jpg);
+      }
+
+      .carousel-item {
+        height: 100%;
+        margin-top: 0;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .contentBox {
+        padding-top: 145px;
+
+        .content {
+          color: white;
+          text-transform: uppercase;
+          padding: 55px 0 45px 0;
+          background: $counter-time-color-background;
+          position: relative;
+
+          h1, h2 {
+            font-weight: 400;
+
+            span {
+              font-weight: 600;
+            }
+          }
+
+          .btn-main {
+            width: 180px;
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-90px);
+            border-radius: 3px;
+            border: 1px solid white;
+            background: white;
+            line-height: 30px;
+            color: $text-color;
+            transition: .2s;
+
+            &:hover {
+              background: $text-color;
+            }
+          }
+        }
+      }
+      .buttons {
+        position: relative;
+        background: $text-color;
+        height: 40px;
+        top: -40px;
+
+        .btn-main {
+          height: 40px;
+          border: none;
+          transition: .2s;
+          width: 49.7%;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
