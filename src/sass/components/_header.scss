@@ -1,4 +1,4 @@
-header {
+
   .top-bar {
     background-color: $header-topbar-bg;
 
@@ -131,7 +131,7 @@ header {
         opacity: 0;
         position: absolute;
         bottom: 10%;
-        left: 70%;
+        left: 75%;
       }
 
       .nav-hamburger {
@@ -145,7 +145,7 @@ header {
         cursor: pointer;
         position: absolute;
         bottom: 10%;
-        left: 70%;
+        left: 75%;
 
         span {
           background-color: $header-bg;
@@ -156,40 +156,40 @@ header {
           margin: 4px auto;
         }
       }
+    }
 
-      ul {
-        margin: 0;
-        padding: 0;
+    .menu-elements {
+      margin: 0;
+      padding: 0;
+      display: flex;
+
+      li {
+        list-style: none;
         display: flex;
+        align-items: stretch;
 
-        li {
-          list-style: none;
+        a {
+          color: $text-color;
+          text-transform: uppercase;
+          font-size: 12px;
+          padding: 1rem;
+          text-decoration: none;
           display: flex;
-          align-items: stretch;
+          align-items: center;
+          border-top: 4px solid #ffffff;
+          font-weight: 500;
+          letter-spacing: 1px;
+          @extend %elementsAnimation;
 
-          a {
-            color: $text-color;
-            text-transform: uppercase;
-            font-size: 12px;
-            padding: 1rem;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            border-top: 4px solid #ffffff;
-            font-weight: 500;
-            letter-spacing: 1px;
-            @extend %elementsAnimation;
+          &:hover,
+          &.active {
+            background-color: $primary;
+            color: #ffffff;
+            border-color: $primary;
+          }
 
-            &:hover,
-            &.active {
-              background-color: $primary;
-              color: #ffffff;
-              border-color: $primary;
-            }
-
-            &.active {
-              border-color: $text-color;
-            }
+          &.active {
+            border-color: $text-color;
           }
         }
       }
@@ -317,48 +317,8 @@ header {
       }
     }
   }
-}
-@include media-breakpoint-down(md) {
-  header {
-    .top-bar {
-      .text-left {
-        flex-grow: 2;
 
-        .header-left-menu {
-          margin-right: 0.9rem;
-        }
-      }
-
-      .text-right {
-        .header-right-menu {
-          margin-left: 0.9rem;
-        }
-      }
-      .header-links {
-        display: none;
-      }
-    }
-    .company-claim {
-      .phone-number {
-        order: 3;
-        flex-basis: 100%;
-        p {
-          font-size: 14px;
-        }
-      }
-      .logo {
-        order: 1;
-      }
-      .cart {
-        order: 2;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-      }
-    }
-  }
-}
-@media (min-width: 767px) and (max-width: 1200px) {
+@include media-breakpoint-between(md, lg) {
 
   .menu-bar {
     height: 105px;
@@ -378,44 +338,79 @@ header {
   }
 }
 
-@media (max-width: 767px) {
+@include media-breakpoint-down(sm) {
 
-  header {
+<<<<<<< HEAD
+=======
     .menu-bar {
       .menu {
         z-index: 100;
         position: relative;
         right: 8em;
 
-        .nav-hamburger {
-          display: block;
-        }
+>>>>>>> ee409f8233139a7faa3f2d722d99c1876f432ce8
+  .menu-bar {
+    .menu {
+      z-index: 100;
+      position: relative;
+      right: 8em;
 
+<<<<<<< HEAD
+      .nav-hamburger {
+        display: block;
+      }
+
+      #input-hamburger:checked + ul {
+        overflow: visible;
+      }
+    }
+    .menu-elements {
+      flex-direction: column;
+      overflow: hidden;
+      max-height: 0;
+      width: 50rem;
+      z-index: 1000;
+      li {
+        background-color: $primary;
+        display: inline-block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        a {
+          border-top: 4px solid $primary;
+          justify-content: center;
+          align-items: center;
+=======
         #input-hamburger:checked + ul {
           overflow: visible;
         }
-
-        ul {
-          flex-direction: column;
-          overflow: hidden;
-          max-height: 0;
-          width: 50rem;
-          z-index: 1000;
-          li {
-            background-color: $primary;
-            display: inline-block;
-            margin: 0 auto;
-            width: 100%;
-            max-width: 100%;
-            min-width: 0;
-            a {
-              border-top: 4px solid $primary;
-              justify-content: center;
-              align-items: center;
-            }
+      }
+      .menu-elements {
+        flex-direction: column;
+        overflow: hidden;
+        max-height: 0;
+        width: 50rem;
+        z-index: 1000;
+        li {
+          background-color: $primary;
+          display: inline-block;
+          margin: 0 auto;
+          width: 100%;
+          max-width: 100%;
+          min-width: 0;
+          a {
+            border-top: 4px solid $primary;
+            justify-content: center;
+            align-items: center;
           }
+>>>>>>> ee409f8233139a7faa3f2d722d99c1876f432ce8
         }
       }
     }
   }
 }
+<<<<<<< HEAD
+>>>>>>> Add RWD for search and Home menu
+=======
+>>>>>>> ee409f8233139a7faa3f2d722d99c1876f432ce8
