@@ -30,3 +30,7 @@ a.not-underline {
     text-decoration: none;
   }
 }
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+  display: flex;
+  flex-wrap: wrap;
+}
